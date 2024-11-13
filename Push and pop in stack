@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    stack<int>mystack;
+
+    mystack.push(0);
+    mystack.push(1);
+    mystack.push(2);
+
+    while(!mystack.empty()) // loop while the stack is not empty
+    {
+        cout<<" "<<mystack.top(); // print the top element of the stack
+        mystack.pop(); // remove the top element from the stack so that it doesn't run for infinite times
+    }
+}
